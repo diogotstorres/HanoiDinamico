@@ -27,6 +27,15 @@ Os movimentos de uma pilha de "X" discos podem ser definidos em função de uma 
 Assim, a subestrutura ótima de dá conforme:  
 (Concatenando sequências de movimentos)  
   
+Mover Pilha de X discos da torre Inicial para a Auxiliar:  
+[Movimento de 2 de uma pilha de X-1 discos] + movimento 1 do disco X + [Movimento de 6 de uma pilha de X-1 discos]  
+  
+Mover Pilha de X discos da torre Auxiliar para a Final:  
+[Movimento de 4 de uma pilha de X-1 discos] + movimento 3 do disco X + [Movimento de 2 de uma pilha de X-1 discos]  
+  
+Mover Pilha de X discos da torre Final para a Inicial:  
+[Movimento de 6 de uma pilha de X-1 discos] + movimento 5 do disco X + [Movimento de 4 de uma pilha de X-1 discos]  
+  
 Mover Pilha de X discos da torre Inicial para a Final:  
 [Movimento de 1 de uma pilha de X-1 discos] + movimento 2 do disco X + [Movimento de 3 de uma pilha de X-1 discos]  
   
@@ -36,15 +45,6 @@ Mover Pilha de X discos da torre Auxiliar para a Inicial:
 Mover Pilha de X discos da torre Final para a Auxiliar:  
 [Movimento de 5 de uma pilha de X-1 discos] + movimento 6 do disco X + [Movimento de 1 de uma pilha de X-1 discos]  
   
-Mover Pilha de X discos da torre Inicial para a Auxiliar:  
-[Movimento de 2 de uma pilha de X-1 discos] + movimento 1 do disco X + [Movimento de 6 de uma pilha de X-1 discos]  
-  
-Mover Pilha de X discos da torre Auxiliar para a Final:  
-[Movimento de 4 de uma pilha de X-1 discos] + movimento 3 do disco X + [Movimento de 2 de uma pilha de X-1 discos]  
-  
-Mover Pilha de X discos da torre Final para a Inicial:  
-[Movimento de 6 de uma pilha de X-1 discos] + movimento 5 do disco X + [Movimento de 4 de uma pilha de X-1 discos]  
-   
   
     Por meio da Programação Dinâmica, a complexidade de tempo exponencial pode ser reduzida para O(n).
   
