@@ -2,8 +2,8 @@
   
 Abordagem do problema de Torres de Hanói com uso de Programação Dinâmica,
 resultando em complexidade de tempo linear; na Linguagem C.
-  
-  
+ 
+Exemplo de versão exponencial: https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/  
     
 # Resumo  
 
@@ -47,4 +47,18 @@ Assim, a subestrutura ótima de dá conforme:
   
   
     POR MEIO DA PROGRAMAÇÃO DINÂMICA, A COMPLEXIDADE DE TEMPO EXPONENCIAL PODE SER REDUZIDA PARA O(n)  
+  
+# Exemplo de Saída  
+```  
+Numero de discos(Max: 27): 5  
+31 movimentos:  
+2162432165462162432465432162432  
+  
+  
+Para 3 Torres:   A : Inicio     B : Auxiliar    C : Destino  
+  
+  
+Movimentos:     A->B = 1         B->C = 3        C->A = 5  
+                A->C = 2         B->A = 4        C->B = 6  
+```  
   
