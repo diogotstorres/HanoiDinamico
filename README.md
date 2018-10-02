@@ -2,7 +2,10 @@
   
 Abordagem do problema de Torres de Hanói com uso de Programação Dinâmica,
 resultando em complexidade de tempo linear; na Linguagem C.
-
+  
+  
+    
+# Resumo  
 
 DADAS (3) TORRES DE HANÓI E "N" DISCOS  
 // O PROGRAMA A SEGUIR TEM COMO SAÍDA A ORDEM DO MENOR NÚMERO DE MOVIMENTOS NECESSÁRIOS  
