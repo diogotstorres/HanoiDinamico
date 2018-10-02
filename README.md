@@ -7,10 +7,12 @@ resultando em complexidade de tempo linear; na Linguagem C.
     
 # Resumo  
 
-DADAS (3) TORRES DE HANÓI E "N" DISCOS  
-O PROGRAMA A SEGUIR TEM COMO SAÍDA A ORDEM DO MENOR NÚMERO DE MOVIMENTOS NECESSÁRIOS  
-PARA LEVAR "N" DISCOS DE UMA TORRE "A" PARA OUTRA "C", COM UMA AUXILIAR "B"  
-SEGUINDO O CÓDIGO:(A:INICIAL; B:AUXILIAR; C:FINAL )
+Dadas (3) Torres de Hanói e "n" Discos  
+O programa a seguir tem como saída a sequência dos movimentos necessários para levar "n" discos 
+de uma torre "A"(inicial) para outra "C"(final), com uma auxiliar "B", no menor número de movimentos possível.    
+  
+Seguindo o código:  
+(A:INICIAL; B:AUXILIAR; C:FINAL )    
 A->B = 1    
 B->C = 3                        
 C->A = 5  
@@ -18,12 +20,12 @@ A->C = 2
 B->A = 4          
 C->B = 6    
   
- REPETIÇÃO DE SUBPROBLEMAS:  
- CADA DISCO DE TAMANHO "X" REALIZA, NO MÁXIMO, 3 MOVIMENTOS DIFERENTES, QUE SE REPETEM.  
+Repetição de Subproblemas:  
+Cada disco (e, portanto, cada pilha) de tamanho "X" realiza, no máximo, 3 movimentos diferentes, que se repetem  
   
- OS MOVIMENTOS DE UMA PILHA DE X DISCOS PODEM SER DEFINIDOS EM FUNÇÃO DOS DE UMA DE X-1  
- ASSIM, A SUBESTRUTURA ÓTIMA SE DÁ CONFORME:  
-    
+Os movimentos de uma pilha de "X" discos podem ser definidos em função de uma de "x-1" discos   
+Assim, a subestrutura ótima de dá conforme:  
+  
  MOVER PILHA DE X DISCOS DA INICIAL PARA A FINAL:  
  [MOVIMENTO 1 DE UMA PILHA DE X-1 DISCOS] + MOVIMENTO 2 DO DISCO X + [MOVIMENTO 3 DE UMA PILHA DE X-1 DISCOS]  
   
