@@ -12,7 +12,7 @@ O programa a seguir tem como saída a sequência dos movimentos necessários par
 de uma torre "A"(inicial) para outra "C"(final), com uma auxiliar "B", no menor número de movimentos possível.    
   
 Seguindo o código:  
-(A:INICIAL; B:AUXILIAR; C:FINAL )    
+(A: INICIAL; B: AUXILIAR; C: FINAL )    
 A->B = 1    
 B->C = 3                        
 C->A = 5  
@@ -23,30 +23,30 @@ C->B = 6
 Repetição de Subproblemas:  
 Cada disco (e, portanto, cada pilha) de tamanho "X" realiza, no máximo, 3 movimentos diferentes, que se repetem  
   
-Os movimentos de uma pilha de "X" discos podem ser definidos em função de uma de "x-1" discos   
+Os movimentos de uma pilha de "X" discos podem ser definidos em função de uma de "x-1" discos
 Assim, a subestrutura ótima de dá conforme:  
+(Concatenando sequências de movimentos)  
   
- MOVER PILHA DE X DISCOS DA INICIAL PARA A FINAL:  
- [MOVIMENTO 1 DE UMA PILHA DE X-1 DISCOS] + MOVIMENTO 2 DO DISCO X + [MOVIMENTO 3 DE UMA PILHA DE X-1 DISCOS]  
+Mover Pilha de X discos da torre Inicial para a Final:  
+[Movimento de 1 de uma pilha de X-1 discos] + movimento 2 do disco X + [Movimento de 3 de uma pilha de X-1 discos]  
   
- MOVER PILHA DE X DISCOS DA AUXILIAR PARA A INICIAL:  
- [MOVIMENTO 3 DE UMA PILHA DE X-1 DISCOS] + MOVIMENTO 4 DO DISCO X + [MOVIMENTO 5 DE UMA PILHA DE X-1 DISCOS]  
+Mover Pilha de X discos da torre Auxiliar para a Inicial:  
+[Movimento de 3 de uma pilha de X-1 discos] + movimento 4 do disco X + [Movimento de 5 de uma pilha de X-1 discos]  
   
- MOVER PILHA DE X DISCOS DA FINAL PARA A AUXILIAR:  
- [MOVIMENTO 5 DE UMA PILHA DE X-1 DISCOS] + MOVIMENTO 6 DO DISCO X + [MOVIMENTO 1 DE UMA PILHA DE X-1 DISCOS]  
+Mover Pilha de X discos da torre Final para a Auxiliar:  
+[Movimento de 5 de uma pilha de X-1 discos] + movimento 6 do disco X + [Movimento de 1 de uma pilha de X-1 discos]  
   
- MOVER PILHA DE X DISCOS DA INICIAL PARA A AUXILIAR:  
- [MOVIMENTO 2 DE UMA PILHA DE X-1 DISCOS] + MOVIMENTO 1 DO DISCO X + [MOVIMENTO 6 DE UMA PILHA DE X-1 DISCOS]  
+Mover Pilha de X discos da torre Inicial para a Auxiliar:  
+[Movimento de 2 de uma pilha de X-1 discos] + movimento 1 do disco X + [Movimento de 6 de uma pilha de X-1 discos]  
   
- MOVER PILHA DE X DISCOS DA AUXILIAR PARA A FINAL:  
- [MOVIMENTO 4 DE UMA PILHA DE X-1 DISCOS] + MOVIMENTO 3 DO DISCO X + [MOVIMENTO 2 DE UMA PILHA DE X-1 DISCOS]  
+Mover Pilha de X discos da torre Auxiliar para a Final:  
+[Movimento de 4 de uma pilha de X-1 discos] + movimento 3 do disco X + [Movimento de 2 de uma pilha de X-1 discos]  
   
- MOVER PILHA DE X DISCOS DA FINAL PARA A INICIAL:  
- [MOVIMENTO 6 DE UMA PILHA DE X-1 DISCOS] + MOVIMENTO 5 DO DISCO X + [MOVIMENTO 4 DE UMA PILHA DE X-1 DISCOS]  
-    
+Mover Pilha de X discos da torre Final para a Inicial:  
+[Movimento de 6 de uma pilha de X-1 discos] + movimento 5 do disco X + [Movimento de 4 de uma pilha de X-1 discos]  
+   
   
-  
-    POR MEIO DA PROGRAMAÇÃO DINÂMICA, A COMPLEXIDADE DE TEMPO EXPONENCIAL PODE SER REDUZIDA PARA O(n)  
+    Por meio da Programação Dinâmica, a complexidade de tempo exponencial pode ser reduzida para O(n).
   
 # Exemplo de Saída  
 ```  
