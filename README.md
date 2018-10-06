@@ -24,7 +24,7 @@ Repetição de Subproblemas:
 Cada disco (e, portanto, cada pilha) de tamanho "X" realiza, no máximo, 3 movimentos diferentes, que se repetem  
   
 Os movimentos de uma pilha de "X" discos podem ser definidos em função de uma de "x-1" discos
-Assim, a subestrutura ótima de dá conforme:  
+Assim, a subestrutura ótima se dá conforme:  
 (Concatenando sequências de movimentos)  
 ```   
   
