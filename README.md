@@ -1,4 +1,4 @@
-# Hanói Dinamico  
+# Hanói Dinâmico  
   
 Abordagem do problema de Torres de Hanói com uso de Programação Dinâmica,
 resultando em complexidade de tempo linear; na Linguagem C.
